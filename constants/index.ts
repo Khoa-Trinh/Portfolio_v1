@@ -4,6 +4,8 @@ import Sketchfab from "@/public/logos-svg/support/Sketchfab_logo (1) 1.svg";
 import StackOverflow from "@/public/logos-svg/support/Stack_Overflow_logo 1.svg";
 import Vercel from "@/public/logos-svg/support/Vercel_logo_black (1) 1.svg";
 import Youtube from "@/public/logos-svg/support/YouTube_Logo_2017 (1) 1.svg";
+import Ballon from '@/public/icons-svg/balloon.svg'
+import Cake from '@/public/icons-svg/birthday-cake.svg'
 
 export const navigationItems = [
   { label: "About me", href: "#aboutme" },
@@ -19,4 +21,29 @@ export const supportedLogos = [
   { logo: StackOverflow, aspect: "aspect-[51/10]" },
   { logo: Vercel, aspect: "aspect-[109/25]" },
   { logo: Youtube, aspect: "aspect-[112/25]" },
+];
+
+export const aboutme_main: BetterCard[] = [
+  {
+    title: "Day of birth:",
+    description: "xx - xx - 2009",
+    icons: [
+      {
+        url: Ballon,
+        position: ["top-left", 0, 0],
+      },
+      {
+        url: Ballon,
+        position: ["top-right", 0, 0],
+      },
+      {
+        url: Ballon,
+        position: ["bottom-left", 0, 0],
+      },
+      {
+        url: Cake,
+        position: ["bottom-right", 0, 0],
+      },
+    ],
+  },
 ];

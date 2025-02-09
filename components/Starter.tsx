@@ -5,7 +5,7 @@ import InfinityScroll from "./InfinityScroll";
 
 export default function Starter() {
   return (
-    <div className="mx-[5.5rem] relative">
+    <div className="mx-[5.5rem] mb-[24.25rem]">
       <div className="headings">I'm Kelvin Trinh</div>
       <div className="descriptions mt-[-1.25rem]">A full-stack developer</div>
 
