@@ -4,8 +4,33 @@ import Sketchfab from "@/public/logos-svg/support/Sketchfab_logo (1) 1.svg";
 import StackOverflow from "@/public/logos-svg/support/Stack_Overflow_logo 1.svg";
 import Vercel from "@/public/logos-svg/support/Vercel_logo_black (1) 1.svg";
 import Youtube from "@/public/logos-svg/support/YouTube_Logo_2017 (1) 1.svg";
-import Ballon from '@/public/icons-svg/balloon.svg'
-import Cake from '@/public/icons-svg/birthday-cake.svg'
+import Ballon from "@/public/icons-svg/balloon.svg";
+import Cake from "@/public/icons-svg/birthday-cake.svg";
+import Phone from "@/public/icons-svg/phone-calling-rounded.svg";
+import DialPad from "@/public/icons-svg/dial-pad.svg";
+import Age16 from "@/public/icons-svg/age-16.svg";
+import Gender from "@/public/icons-svg/male.svg";
+import HtmlTag from "@/public/icons-svg/html-coding.svg";
+import Html from "@/public/icons-svg/html.svg";
+import Css from "@/public/icons-svg/css3.svg";
+import Monitor from "@/public/icons-svg/computer.svg";
+import Mausoleum from "@/public/icons-svg/ho-chi-ming-mausoleum.svg";
+import City from "@/public/icons-svg/city.svg";
+import Skill from "@/public/icons-svg/skill.svg";
+import Solid from "@/public/icons-svg/advanced-solutions-lab.svg";
+import Mail from "@/public/icons-svg/mail.svg";
+import Contact from "@/public/icons-svg/contact-book.svg";
+import Share from "@/public/icons-svg/share-alt.svg";
+import Programming from "@/public/icons-svg/computer-programmer-software-engineer-coder-software-developer.svg";
+import StudentBook from "@/public/icons-svg/student-book.svg";
+import Javascript from "@/public/icons-svg/javascript-logo.svg";
+import Typescript from "@/public/icons-svg/typescript-icon.svg";
+import C from "@/public/icons-svg/C_Programming_Language.svg";
+import CSharp from "@/public/icons-svg/Logo_C_sharp.svg";
+import Python from "@/public/icons-svg/python.svg";
+import Java from "@/public/icons-svg/java.svg";
+import SQL from "@/public/icons-svg/sql.svg";
+import Bash from "@/public/icons-svg/terminal.svg";
 
 export const navigationItems = [
   { label: "About me", href: "#aboutme" },
@@ -23,7 +48,7 @@ export const supportedLogos = [
   { logo: Youtube, aspect: "aspect-[112/25]" },
 ];
 
-export const aboutme_main: BetterCard[] = [
+export const aboutmeMain: AboutmeMain[] = [
   {
     title: "Day of birth:",
     description: "xx - xx - 2009",
@@ -31,19 +56,237 @@ export const aboutme_main: BetterCard[] = [
       {
         url: Ballon,
         position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
       },
       {
         url: Ballon,
         position: ["top-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
       },
       {
         url: Ballon,
         position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
       },
       {
         url: Cake,
         position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
       },
     ],
+  },
+  {
+    title: "Phone number:",
+    description: "091851****",
+    icons: [
+      {
+        url: Phone,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: DialPad,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Age and gender:",
+    description: "16 and i’m male",
+    icons: [
+      {
+        url: Age16,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Gender,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Website:",
+    description: "khoa.mhpteam.dev",
+    icons: [
+      {
+        url: HtmlTag,
+        position: ["top-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: HtmlTag,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: HtmlTag,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Html,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Css,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Monitor,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "City:",
+    description: "Hồ Chí Minh",
+    icons: [
+      {
+        url: Mausoleum,
+        position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: City,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Skill level:",
+    description: "Senior",
+    icons: [
+      {
+        url: Skill,
+        position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Solid,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Email:",
+    description: "kelvintrinh09@gmail.com",
+    type: "long",
+    icons: [
+      {
+        url: Mail,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Contact,
+        position: ["top-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Share,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Job:",
+    description: "Developer & Student",
+    icons: [
+      {
+        url: Programming,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: StudentBook,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+];
+
+export const aboutmeSkill: AboutmeSkill[] = [
+  {
+    url: Html,
+    pLanguage: "HTML",
+    progress: 60,
+  },
+  {
+    url: Css,
+    pLanguage: "CSS",
+    progress: 40,
+  },
+  {
+    url: Javascript,
+    pLanguage: "JAVASCRIPT",
+    progress: 90,
+  },
+  {
+    url: Typescript,
+    pLanguage: "TYPESCRIPT",
+    progress: 80,
+  },
+  {
+    url: C,
+    pLanguage: "C",
+    progress: 0,
+  },
+  {
+    url: CSharp,
+    pLanguage: "C#",
+    progress: 5,
+  },
+  {
+    url: Python,
+    pLanguage: "PYTHON",
+    progress: 10,
+  },
+  {
+    url: Java,
+    pLanguage: "JAVA",
+    progress: 2,
+  },
+  {
+    url: SQL,
+    pLanguage: "SQL",
+    progress: 60,
+  },
+  {
+    url: Bash,
+    pLanguage: "BASH",
+    progress: 70,
   },
 ];
