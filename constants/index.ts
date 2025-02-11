@@ -37,6 +37,12 @@ import Plus from '@/public/icons-svg/plus.svg'
 import Books from '@/public/icons-svg/books-book.svg'
 import Roadmap from '@/public/icons-svg/roadmap.svg'
 import Age6 from '@/public/icons-svg/age-6.svg'
+import Boy from '@/public/icons-svg/avatar-boy-kid.svg'
+import AsianS from '@/public/icons-svg/The Asian International School.svg'
+import Teenager from '@/public/icons-svg/Teenager.svg'
+import LDCS from '@/public/icons-svg/Luong Dinh Cua Secondary School.svg'
+import NTMS from '@/public/icons-svg/Ngo Thoi Nhiem High School Logo.svg'
+import PTNKS from '@/public/icons-svg/Logo_Truong_PTNK.svg'
 
 export const navigationItems = [
   { label: "About me", href: "#aboutme" },
@@ -389,3 +395,82 @@ export const aboutmeFunFact: AboutmeFunFact[] = [
     ],
   },
 ];
+
+export const resumeEducation: ResumeEducation[] = [
+  {
+    title: "The Asian International School",
+    description: "177-185 Nguyen Van Huong, Thao Dien Ward, Thu Duc City, HCMC",
+    time: "2015 - 2021",
+    icons: [
+      {
+        url: Boy,
+        position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: AsianS,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Luong Dinh Cua Secondary School",
+    description: "No. 37, Le Hien Mai Street, Thanh My Loi Ward, Thu Duc City, HCMC",
+    time: "2021 - 2022",
+    icons: [
+      {
+        url: Teenager,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: LDCS,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Ngo Thoi Nhiem Primary, Secondary and High School System",
+    description: "65D Ho Ba Phan, Phuoc Long A, Thu Duc City, HCMC",
+    time: "2022 - 2024",
+    icons: [
+      {
+        url: Teenager,
+        position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: NTMS,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Specialized in Information Technology - Gifted High School, VNU-HCM  ",
+    description: "Ward 6, Linh Trung Ward, Thu Duc District, HCMC",
+    time: "2024 - Now",
+    icons: [
+      {
+        url: PTNKS,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Programming,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+]

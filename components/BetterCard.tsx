@@ -1,3 +1,4 @@
+import { DescriptionLength } from "@/enum";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -83,3 +84,60 @@ export function SkillAboutmeCard({ url, pLanguage, progress }: AboutmeSkill) {
 // 'w-[2%]'
 // 'w-[60%]'
 // 'w-[70%]'
+
+export function FunFactAboutmeCard({
+  title,
+  description,
+  icons,
+}: AboutmeFunFact) {
+  let length;
+  if (description.length < 40) {
+    length = DescriptionLength.SHORT;
+  } else if (description.length < 80) {
+    length = DescriptionLength.MEDIUM;
+  } else {
+    length = DescriptionLength.LONG;
+  }
+  return (
+    <div className="h-[12.5rem] w-[26.375rem] rounded-[1rem] flex flex-col items-center relative shadow-[0px_4px_4px_2px_rgba(0,0,0,0.25)]">
+      <div className="descriptions mt-[1rem]">{title}</div>
+      <div
+        className={cn(
+          "titles text-center",
+          length === 1 && "mt-[0.75rem] mx-[4rem]",
+          length === 2 && "mt-[0.75rem] mx-[1.5rem]",
+          length === 3 && "mx-[0.25rem]"
+        )}
+      >
+        {description}
+      </div>
+
+      {icons.map(({ url, position, rotate, size }, i) => {
+        const [verti, hori] = position[0].split("-");
+        const [x, y] = [position[1], position[2]];
+        const [hei, wi] = [size[0], size[1]];
+        return (
+          <div
+            className={cn(
+              "absolute",
+              verti + "-" + y,
+              hori + "-" + x,
+              "rotate-[" + rotate + "deg]"
+            )}
+            key={i}
+          >
+            <div
+              className={cn(
+                "relative",
+                "h-[" + hei + "rem]",
+                "w-[" + wi + "rem]"
+              )}
+            >
+              <Image src={url} alt="Icons" fill />
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}

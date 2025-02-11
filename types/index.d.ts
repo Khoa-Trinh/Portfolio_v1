@@ -14,6 +14,14 @@ declare type AboutmeSkill = {
   url: string;
   pLanguage: string;
   progress: number;
-}
+};
 
-declare type AboutmeFunFact = AboutmeMain
+declare type AboutmeFunFact = Omit<AboutmeMain, "type">;
+
+declare type ResumeEducation = Omit<AboutmeMain, "type"> & {
+  time: string;
+};
+
+declare type ResumeExperience = ResumeEducation & {
+  month?: boolean;
+};

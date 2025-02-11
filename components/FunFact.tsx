@@ -1,5 +1,5 @@
-import { aboutmeMain } from "@/constants";
-import { MainAboutmeCard } from "./BetterCard";
+import { aboutmeFunFact } from "@/constants";
+import { FunFactAboutmeCard } from "./BetterCard";
 
 export default function FunFact() {
   return (
@@ -9,9 +9,9 @@ export default function FunFact() {
         Some facts, achievements and goals of mine
       </div>
 
-      <div className="flex flex-wrap mt-[1rem] gap-x-[1.25rem] gap-y-[1.5rem] max-w-[48.4375rem]">
-        {aboutmeMain.map((proper, i) => (
-          <MainAboutmeCard key={i} {...proper} />
+      <div className="flex flex-wrap mt-[1rem] gap-x-[1.25rem] gap-y-[1.5rem] max-w-[54rem]">
+        {aboutmeFunFact.map((proper, i) => (
+          <FunFactAboutmeCard key={i} {...proper} />
         ))}
       </div>
     </div>

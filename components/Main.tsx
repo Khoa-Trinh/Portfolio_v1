@@ -1,7 +1,7 @@
 import { aboutmeMain } from "@/constants";
 import { MainAboutmeCard } from "./BetterCard";
 
-export default function Main() {
+export default function  Main() {
   return (
     <div className="mx-[5.5rem] mb-[11rem]">
       <div className="headings">About me</div>
