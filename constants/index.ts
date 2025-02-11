@@ -31,6 +31,12 @@ import Python from "@/public/icons-svg/python.svg";
 import Java from "@/public/icons-svg/java.svg";
 import SQL from "@/public/icons-svg/sql.svg";
 import Bash from "@/public/icons-svg/terminal.svg";
+import Vscode from '@/public/icons-svg/vscode.svg'
+import Neovim from '@/public/icons-svg/Neovim-logo.svg'
+import Plus from '@/public/icons-svg/plus.svg'
+import Books from '@/public/icons-svg/books-book.svg'
+import Roadmap from '@/public/icons-svg/roadmap.svg'
+import Age6 from '@/public/icons-svg/age-6.svg'
 
 export const navigationItems = [
   { label: "About me", href: "#aboutme" },
@@ -288,5 +294,98 @@ export const aboutmeSkill: AboutmeSkill[] = [
     url: Bash,
     pLanguage: "BASH",
     progress: 70,
+  },
+];
+
+export const aboutmeFunFact: AboutmeFunFact[] = [
+  {
+    title: "My VsCode setup:",
+    description: "I’m using Vscode + Neovim makes my productivity lots better",
+    icons: [
+      {
+        url: Vscode,
+        position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Plus,
+        position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Neovim,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "43",
+    description: "Is the number of project has been implemented so far",
+    icons: [
+      {
+        url: Roadmap,
+        position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Books,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "6 hours:",
+    description: "Average hours of programming per day",
+    icons: [
+      {
+        url: Programming,
+        position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Age6,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "My goals:",
+    description: "Learn and become more proficient in python, c, c#, bash languages ​​to develop better in backend",
+    icons: [
+      {
+        url: Python,
+        position: ["top-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: C,
+        position: ["top-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: CSharp,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Bash,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
   },
 ];

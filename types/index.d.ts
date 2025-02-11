@@ -15,3 +15,5 @@ declare type AboutmeSkill = {
   pLanguage: string;
   progress: number;
 }
+
+declare type AboutmeFunFact = AboutmeMain

@@ -1,3 +1,4 @@
+import FunFact from "./FunFact";
 import Main from "./Main";
 import Skill from "./Skill";
 
@@ -6,6 +7,7 @@ export default function Aboutme() {
     <>
       <Main />
       <Skill />
+      <FunFact />
     </>
   );
 }
