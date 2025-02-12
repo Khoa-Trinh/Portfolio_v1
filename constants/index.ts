@@ -43,6 +43,14 @@ import Teenager from '@/public/icons-svg/Teenager.svg'
 import LDCS from '@/public/icons-svg/Luong Dinh Cua Secondary School.svg'
 import NTMS from '@/public/icons-svg/Ngo Thoi Nhiem High School Logo.svg'
 import PTNKS from '@/public/icons-svg/Logo_Truong_PTNK.svg'
+import Scratch from '@/public/icons-svg/ScratchCat3.0.svg'
+import ScratchCode from '@/public/icons-svg/Scratch-code-snippet-3d.svg'
+import MindX from '@/public/icons-svg/MindX.svg'
+import Smiling from '@/public/icons-svg/smiling-face-with-sunglasses.svg'
+import React from '@/public/icons-svg/React-icon.svg'
+import Node from '@/public/icons-svg/Node.js_logo.svg'
+import MLTech from '@/public/icons-svg/MLTech-Academy-Main_Logo.svg'
+import Logo from '@/public/logos-svg/main/Logo.png'
 
 export const navigationItems = [
   { label: "About me", href: "#aboutme" },
@@ -455,7 +463,7 @@ export const resumeEducation: ResumeEducation[] = [
     ],
   },
   {
-    title: "Specialized in Information Technology - Gifted High School, VNU-HCM  ",
+    title: "Specialized in Information Technology - Gifted High School, VNU-HCM",
     description: "Ward 6, Linh Trung Ward, Thu Duc District, HCMC",
     time: "2024 - Now",
     icons: [
@@ -467,6 +475,99 @@ export const resumeEducation: ResumeEducation[] = [
       },
       {
         url: Programming,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+]
+
+export const resumeExperiment: ResumeExperience[] = [
+  {
+    title: "Self taught Scratch on Youtube",
+    description: "I found Scratch programming is like playing with Lego, which is very interesting to me",
+    time: "2019 - 2021",
+    icons: [
+      {
+        url: Scratch,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: ScratchCode,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Start learning the basics of web development with MindX",
+    description: "I found that web development might be better than Scratch so I gave it a try and I was right",
+    time: "Mar - Sept 2024",
+    month: true,
+    icons: [
+      {
+        url: MindX,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Smiling,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "Internship at MLTech Academy",
+    description: "I was taught about MERN (MongoDB, Express Js, React, Nodejs) and important concepts",
+    time: "Jul - Sept 2024",
+    month: true,
+    icons: [
+      {
+        url: React,
+        position: ["top-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Node,
+        position: ["bottom-right", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: MLTech,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+    ],
+  },
+  {
+    title: "A member of MHP Team",
+    description: "My classmate is the founder of MHP Team",
+    time: "2025 - Now",
+    icons: [
+      {
+        url: Logo,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: Plus,
+        position: ["bottom-left", 0, 0],
+        rotate: 0,
+        size: [3.125, 3.125],
+      },
+      {
+        url: 'MHP Team',
         position: ["bottom-right", 0, 0],
         rotate: 0,
         size: [3.125, 3.125],
